@@ -1,0 +1,23 @@
+{
+  "name": "playwright-js-ts-automation",
+  "version": "1.0.0",
+  "description": "Hands-on Playwright with TypeScript automation testing practice, covering UI, API, fixtures, assertions, and automation best practices.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veena-n/Playwright-JS-TS-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/veena-n/Playwright-JS-TS-Automation/issues"
+  },
+  "homepage": "https://github.com/veena-n/Playwright-JS-TS-Automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.3.0"
+  }
+}
