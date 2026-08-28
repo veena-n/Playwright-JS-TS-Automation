@@ -1,0 +1,85 @@
+// There are 2 types of xpath
+1. Absolute xpath : absolute xpath follow entire dom structure to indentify
+                  the element.
+        e.g. /html/body/div[1]/div/div/main/article/div/div/div/section[2]/div/form/input[1]
+
+2. Relative xpath: Relative xpath indentify the element by their attribute values.
+      e.g. //tagname[@attribute='value']  or //*[@attribute='value']
+      ->   //input[@placeholder="Email address or phone number"]
+      ->   //input[@placeholder="Password"]
+      ->   //button[@id='loginbutton']
+      ->   //*[@id='loginbutton']
+
+// if we have multiple matching elements with same property, then we user indexing.
+// Not recommended to use.
+-> (//input[@id='firstname'])[2]
+
+XPath Method.
+
+i). text method: We can indentify any element with the help text visible on UI.
+    e.g.   //tagname[text()='visible text']
+        -> //h1[text()=' Dummy Ticket Booking Website']
+        -> //td[text()='Kolkata']
+
+ii). contains method: we can indentify the element with the help of partial attribute value or text value
+        text         e.g.  //tagname[contains(text(), 'partial text value')]
+                     ->  //h1[contains(text(), 'Dummy Ticket')]
+
+
+        attribute    e.g.  //tagname[contains(@attribute, 'partial value')]
+                      -> //input[contains(@placeholder, 'Email address')]
+
+iii). normalize-space: normalize space remove all unwanted spaces from given string.
+              -> e.g. //tagname[normalize-space()= 'value']
+              -> //button[normalize-space()='Log in']
+
+
+################### Advance XPath Axes #######################
+
+1). Parent: In this method, will indentify parent element with reference of child element.
+            e.g.  //child_tagname[@attribute='value']/parent::parent_tagname[@attibute='value']
+            -> //td[text()='Indore']/parent::tr
+            -> //td[text()='Indore']/parent::tr//input
+            -> //td[text()='Delhi']/parent::tr//input
+
+2). Ancestor: In this method, will indentify ancestor element with reference of grand child element.
+            e.g //child_tagname[@attribute='value']/ancestor::ancestor_tagname[@attibute='value']
+            -> //input[@value="radio_123"]/ancestor::div[@align="left"]
+
+3). following: In this method, will indentify all element which are available below side of reference
+               element on web page.
+         e.g //ref_tagname[@attribute='value']/following::tar_tagname[@attibute='value']
+         -> //input[@id="fromcity"]/following::input[@id='billing_address']
+
+4). following-sibling :
+         e.g. //td[text()='Pune']/following-sibling::td
+        -> //td[text()='Pune']/preceding-sibling::td[text()=6002]
+
+
+5). preceding : In this method, will indentify all element which are available above side of reference
+               element on wbe page.
+         e.g //ref_tagname[@attribute='value']/preceding::tar_tagname[@attibute='value']
+         -> //input[@id="fromcity"]/preceding::input[@id='male']
+
+6). preceding-sibling: we can indentify element from : If want to dinec
+            //td[text()='Pune']/preceding-sibling::td[text()=6002]
+
+
+
+// css selector
+1. class name: we can indentify the element with the help class, we should ass. before the class name.
+               -> .oxd-form-actions
+               -> button.oxd-button.oxd-button--medium.oxd-button--secondary
+               -> 
+2. id: we have add # before id of the element.
+               -> #id
+               -> #admorepass
+
+3. attribute // e.g attrivue[attribute='value']
+           ->  e.g. h1[align="center"]
+           -> h1[align="center"]
+
+4. navigation : move tagelement from one place to another page
+/* ->  table[id="cities"]>tbody>tr
+   -> table[id="cities"]>tbody>tr>td
+   -> table[id="cities"]>tbody>tr>td>input
