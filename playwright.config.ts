@@ -27,10 +27,17 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+    actionTimeout : 20_000, // action timeout applies on all the elements.
+    navigationTimeout: 30_000, // Nsvigation
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
     //video: 'on',
+
+    //to make a test execution slow
+      launchOptions: {
+      slowMo: 1000
+    }
   },
 
   /* Configure projects for major browsers */
