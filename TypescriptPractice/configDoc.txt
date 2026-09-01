@@ -1,0 +1,16 @@
+Steps to start with typescript
+-> Make sure Nodejs is already install.
+-> create a directory with name : TypeScriptPractice
+-> Open terminal in : TypeScriptPractice directory.
+-> npm init -y : It will create a package.json file in TypeScriptPractice directory.
+-> npm install -g typescript  : it will install typescript depedencies.
+-> tsc -v : it will show current version install
+    -> Version 6.0.3
+
+-> Create typeScript Configurations.
+   -> tsc --init  : It will create Configurations file : tscconfig.json
+
+-> Install depedencies to execute code without compile.
+   -> npm install ts-node  --save-dev
+
+-> npm install -g ts-node typescript : run this command if you are facing issue with ts-node
