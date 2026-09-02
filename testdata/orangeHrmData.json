@@ -1,0 +1,18 @@
+{
+
+    "url" : "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "validcred" : {
+
+        "username" : "Admin",
+        "password" : "admin123"
+
+},
+    "Invalidcred" : {
+
+        "username" : "Admin1",
+        "password" : "admin1234",
+        "errorMsg" : "Invalid credentials"
+
+}
+
+}
