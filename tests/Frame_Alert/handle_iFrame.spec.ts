@@ -1,5 +1,5 @@
 import {test} from '@playwright/test'
-import {FrameAndAlert} from '../../Page_Object/Frame&Alert/iFramepage.ts'
+import {FrameAndAlert} from '../../Page_Object/Frame_Alert/iFramepage.ts'
 import * as testdata from '../../testdata/test_data.ts'
 
 test.describe("Handle iFrame and alert", () => {
