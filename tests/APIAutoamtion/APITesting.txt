@@ -1,0 +1,55 @@
+API : Application Programming Interface
+
+There are three layers in Application
+
+ Presentation Layer
+       |
+       |
+ Business Layer(API)
+       |
+       |
+  Database Layer
+
+There are different types
+- Free API : anyone can access the API without authentication.
+- Authentication based API : API with auth token.
+- Internal API : only available Internally for application or in organization.
+- Subscriotion Based API : End has to Pay some subscription to get access of API.
+            then user can use the services usign API.
+
+    e.g. -> AWS (Amazon web services.)
+    -> Goople Map API
+    -> PayTM, Goibibo, Makemytrip, Redbus
+       
+API Architecture.
+
+-> REST (Represantational State transfer)
+   -> It supports (JSON, XML, HTML, Text)
+   -> resource driven API (/users/23)
+   -> It use HTTP/HTTPS Protocol.
+   -> Rest is stateless (It does not mantain the cache of API)
+
+-> SOAP (Simple Object Access Protocol)
+   -> It works with XML only.
+   -> It operational driver or function driven.
+      function/operational-driven.
+   -> It supports HTTP, HTTPS, TCP, Text
+   -> Can be stateless or statefull
+
+
+HTTPS Methods :
+
+-> GET
+-> POST
+-> PUT
+-> PATCH
+-> DELETE
+
+API Response Code
+1.  100 -199 : Informational API
+2.  200 - 299 : Success Message.
+3.  300 - 399 : Re-directional message.
+4.  400 - 499 : client error.
+5.  500 - 599 : server error. 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#information_responses
+
